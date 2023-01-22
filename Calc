@@ -1,0 +1,14 @@
+bill = input("Welcome to TipCalculator.\nHow much was your bill? ")
+people = input("How many people are splitting the bill? ")
+tip = input("What percent tip would you like? (10, 15, 20) ")
+
+final_bill = 0
+if tip == 10:
+  final_bill = ((int(bill) / int(people))) * 1.10
+  print(round(final_bill, 2))
+elif tip == 15:
+  final_bill = ((int(bill) / int(people))) * 1.15
+  print(round(final_bill, 2))
+else:
+  final_bill = ((int(bill) / int(people))) * 1.20
+  print(round(final_bill, 2))
